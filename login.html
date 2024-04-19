@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="">
+
+      <title>Login form - Bedimcode</title>
+   </head>
+   <style>
+     
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+.login__title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.login__box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.login__input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.login__box i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color: #888;
+}
+
+
+.login__check {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.login__forgot {
+    color: #888;
+    text-decoration: none;
+}
+
+body {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            background-color: rgba(255, 255, 255, 0.9); 
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-image: url(img2.jpg); 
+            background-size: cover;
+            background-position: center;
+            
+        }
+
+
+/* Button styles */
+.login__button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login__button:hover {
+    background-color: #0056b3;
+}
+
+/* Register link styles */
+.login__register {
+    text-align: center;
+}
+
+.login__register a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+   </style>
+   <body>
+      <div class="login">
+      
+
+         <form action="/login" class="login__form" method="post">
+            <h1 class="login__title">Login</h1>
+
+            <div class="login__inputs">
+               <div class="login__box">
+                  <input type="email" placeholder="Email ID" name="email" required class="login__input">
+                  <i class="ri-mail-fill"></i>
+               </div>
+
+               <div class="login__box">
+                  <input type="password" placeholder="Password" name="password" required class="login__input">
+                  <i class="ri-lock-2-fill"></i>
+               </div>
+            </div>
+
+            <div class="login__check">
+               <div class="login__check-box">
+                  <input type="checkbox" class="login__check-input" id="user-check">
+                  <label for="user-check" class="login__check-label">Remember me</label>
+               </div>
+
+               <a href="#" class="login__forgot">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="login__button">Login</button>
+
+            <div class="login__register">
+               Don't have an account? <a href="sign.html">Register</a>
+            </div>
+         </form>
+      </div>
+   </body>
+</html>
